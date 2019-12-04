@@ -14,6 +14,12 @@
 		7C650DD72397E508009DE557 /* PersistentLesson3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */; };
 		7C650DD92397E509009DE557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C650DD82397E509009DE557 /* Assets.xcassets */; };
 		7C650DDC2397E509009DE557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C650DDA2397E509009DE557 /* LaunchScreen.storyboard */; };
+		7C650DE72397E56C009DE557 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */; };
+		7C650DE82397E56C009DE557 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */; };
+		7C650DEE2397E5CB009DE557 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DED2397E5CB009DE557 /* TableViewController.swift */; };
+		7C650DF12397ED15009DE557 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */; };
+		7C650DF22397ED15009DE557 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */; };
+		7C650DF52397F064009DE557 /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DF42397F064009DE557 /* ImageTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,13 @@
 		7C650DD82397E509009DE557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C650DDB2397E509009DE557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C650DDD2397E509009DE557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7C650DED2397E5CB009DE557 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PersistentLesson v2.xcdatamodel"; sourceTree = "<group>"; };
+		7C650DF42397F064009DE557 /* ImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +71,12 @@
 		7C650DCB2397E508009DE557 /* PersistentLesson3 */ = {
 			isa = PBXGroup;
 			children = (
+				7C650DEC2397E58C009DE557 /* Models */,
 				7C650DCC2397E508009DE557 /* AppDelegate.swift */,
+				7C650DF42397F064009DE557 /* ImageTransformer.swift */,
 				7C650DCE2397E508009DE557 /* SceneDelegate.swift */,
 				7C650DD02397E508009DE557 /* ViewController.swift */,
+				7C650DED2397E5CB009DE557 /* TableViewController.swift */,
 				7C650DD22397E508009DE557 /* Main.storyboard */,
 				7C650DD82397E509009DE557 /* Assets.xcassets */,
 				7C650DDA2397E509009DE557 /* LaunchScreen.storyboard */,
@@ -68,6 +84,17 @@
 				7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */,
 			);
 			path = PersistentLesson3;
+			sourceTree = "<group>";
+		};
+		7C650DEC2397E58C009DE557 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */,
+				7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */,
+				7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */,
+				7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C650DE72397E56C009DE557 /* Book+CoreDataClass.swift in Sources */,
+				7C650DF52397F064009DE557 /* ImageTransformer.swift in Sources */,
 				7C650DD12397E508009DE557 /* ViewController.swift in Sources */,
+				7C650DE82397E56C009DE557 /* Book+CoreDataProperties.swift in Sources */,
+				7C650DF12397ED15009DE557 /* User+CoreDataClass.swift in Sources */,
 				7C650DCD2397E508009DE557 /* AppDelegate.swift in Sources */,
 				7C650DD72397E508009DE557 /* PersistentLesson3.xcdatamodeld in Sources */,
+				7C650DF22397ED15009DE557 /* User+CoreDataProperties.swift in Sources */,
 				7C650DCF2397E508009DE557 /* SceneDelegate.swift in Sources */,
+				7C650DEE2397E5CB009DE557 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +378,10 @@
 		7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */,
 				7C650DD62397E508009DE557 /* PersistentLesson3.xcdatamodel */,
 			);
-			currentVersion = 7C650DD62397E508009DE557 /* PersistentLesson3.xcdatamodel */;
+			currentVersion = 7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */;
 			path = PersistentLesson3.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
