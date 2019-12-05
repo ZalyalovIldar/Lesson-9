@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  PersistentLesson3
+//  Lesson9
 //
-//  Created by Ильдар Залялов on 04.12.2019.
-//  Copyright © 2019 Ildar Zalyalov. All rights reserved.
+//  Created by Никита Лужбин on 05.12.2019.
+//  Copyright © 2019 Никита. All rights reserved.
 //
 
 import UIKit
@@ -48,6 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
