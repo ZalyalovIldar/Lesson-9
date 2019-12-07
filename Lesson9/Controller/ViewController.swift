@@ -1,5 +1,4 @@
 import UIKit
-import CoreData
 
 private let imageCellIdentifier = "imageCell"
 
@@ -9,7 +8,6 @@ class ViewController: UIViewController {
     
     let dataManager = DataManager.shared
     var fetchingMore = false
-    var imageModels: NSFetchedResultsController<ImageModel>!
     
     //MARK: - IBOutlets
 
@@ -22,10 +20,8 @@ class ViewController: UIViewController {
         
         setupCollectionView()
         setupDelegate()
-        imageModels = dataManager.fetchResultController
-        
+
         dataManager.addImageModels(count: 4)
-        
     }
 }
 
@@ -41,7 +37,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        let sectionInfo = imageModels.sections?[section]
+        let sectionInfo = dataManager.fetchResultController.sections?[section]
         
         print(sectionInfo?.numberOfObjects ?? 0)
         return sectionInfo?.numberOfObjects ?? 0
@@ -49,7 +45,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let imageModel = imageModels.object(at: indexPath)
+        let imageModel = dataManager.fetchResultController.object(at: indexPath)
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imageCellIdentifier, for: indexPath) as! ImageCell
         cell.setup(for: imageModel.image!)
