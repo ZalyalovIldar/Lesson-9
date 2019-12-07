@@ -2,7 +2,7 @@
 //  User+CoreDataClass.swift
 //  PersistentLesson3
 //
-//  Created by Ильдар Залялов on 04.12.2019.
+//  Created by Enoxus on 05/12/2019.
 //  Copyright © 2019 Ildar Zalyalov. All rights reserved.
 //
 //
