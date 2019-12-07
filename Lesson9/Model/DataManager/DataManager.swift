@@ -23,7 +23,7 @@ class DataManager: NSObject {
             
             let imageModel = ImageModel(context: context)
             imageModel.image = UIImage(named: "testImage")
-            imageModel.name = "Image_\(Int.random(in: 0...Int.max))"
+            imageModel.identifier = "Image_\(Int.random(in: 0...Int.max))"
         }
         saveContext()
     }
@@ -76,8 +76,8 @@ extension DataManager: NSFetchedResultsControllerDelegate {
     func setupFetchResultController() {
         
         let fetchRequest: NSFetchRequest<ImageModel> = ImageModel.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: #keyPath(ImageModel.name), ascending: true)
-        fetchRequest.fetchLimit = 15
+        let sortDescriptor = NSSortDescriptor(key: #keyPath(ImageModel.identifier), ascending: true)
+        fetchRequest.fetchLimit = 5
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)

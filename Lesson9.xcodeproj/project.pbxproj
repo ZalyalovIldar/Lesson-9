@@ -38,6 +38,7 @@
 		4289D7392399715D00C97D04 /* ImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
 		4289D73B2399723E00C97D04 /* ImageModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4289D73C2399723E00C97D04 /* ImageModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42D19F9C239C232300E2254D /* Lesson_9 v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Lesson_9 v2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +86,9 @@
 				4289D7242399579500C97D04 /* Assets.xcassets */,
 				4289D7262399579500C97D04 /* LaunchScreen.storyboard */,
 				4289D7292399579500C97D04 /* Info.plist */,
-				4289D7212399579400C97D04 /* Lesson9.xcdatamodeld */,
 				4289D7182399579400C97D04 /* AppDelegate.swift */,
 				4289D71A2399579400C97D04 /* SceneDelegate.swift */,
+				4289D7212399579400C97D04 /* Lesson9.xcdatamodeld */,
 			);
 			path = Lesson9;
 			sourceTree = "<group>";
@@ -429,9 +430,10 @@
 		4289D7212399579400C97D04 /* Lesson9.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				42D19F9C239C232300E2254D /* Lesson_9 v2.xcdatamodel */,
 				4289D7222399579400C97D04 /* Lesson9.xcdatamodel */,
 			);
-			currentVersion = 4289D7222399579400C97D04 /* Lesson9.xcdatamodel */;
+			currentVersion = 42D19F9C239C232300E2254D /* Lesson_9 v2.xcdatamodel */;
 			path = Lesson9.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

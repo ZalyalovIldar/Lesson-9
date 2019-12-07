@@ -1,7 +1,6 @@
 import Foundation
-import UIKit
 import CoreData
-
+import UIKit
 
 extension ImageModel {
 
@@ -10,6 +9,6 @@ extension ImageModel {
     }
 
     @NSManaged public var image: UIImage?
-    @NSManaged public var name: String?
+    @NSManaged public var identifier: String?
 
 }
