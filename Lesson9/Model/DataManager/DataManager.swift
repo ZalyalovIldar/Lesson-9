@@ -4,10 +4,14 @@ import UIKit
 
 class DataManager: NSObject {
     
+    //MARK: - Properties
+    
     static let shared = DataManager()
     
     var fetchResultController: NSFetchedResultsController<ImageModel>!
     weak var collectoinViewHandlerDelegate: CollectionViewHandlerDelegate!
+    
+    //MARK: - Life Circle
     
     override init() {
         super.init()
@@ -37,8 +41,8 @@ class DataManager: NSObject {
             try context.save()
             print("All data deleted")
         }
-        catch {
-            print ("There was an error")
+        catch let error {
+            print(error.localizedDescription)
         }
     }
     
@@ -86,8 +90,6 @@ extension DataManager: NSFetchedResultsControllerDelegate {
         
         try! fetchResultController.performFetch()
     }
-    
-    //MARK: - NSFetchedResultsControllerDelegate
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         

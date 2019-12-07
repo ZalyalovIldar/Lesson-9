@@ -1,13 +1,12 @@
 import UIKit
 
-private let imageCellIdentifier = "imageCell"
-
 class ViewController: UIViewController {
     
     //MARK: - Properties
     
+    private let imageCellIdentifier = "imageCell"
     let dataManager = DataManager.shared
-    var fetchingMore = false
+    var isFetching = false
     
     //MARK: - IBOutlets
 
@@ -20,8 +19,6 @@ class ViewController: UIViewController {
         
         setupCollectionView()
         setupDelegate()
-
-        dataManager.addImageModels(count: 4)
     }
 }
 
@@ -38,8 +35,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         let sectionInfo = dataManager.fetchResultController.sections?[section]
+        print("Количество моделей в БД: \(sectionInfo?.numberOfObjects ?? 0)")
         
-        print(sectionInfo?.numberOfObjects ?? 0)
         return sectionInfo?.numberOfObjects ?? 0
     }
     
@@ -54,8 +51,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let windowWidth = view.frame.width
-        return CGSize(width: windowWidth - 5, height: windowWidth - 5)
+        return CGSize(width: view.frame.width - 5, height: view.frame.width - 5)
     }
 }
 
@@ -69,18 +65,18 @@ extension ViewController {
         let contentHeight = scrollView.contentSize.height
 
         if offsetY > contentHeight - scrollView.frame.height {
-            if !fetchingMore {
-                beginBatchFetched()
+            if !isFetching {
+                fetchData()
             }
         }
     }
 
-    func beginBatchFetched() {
+    func fetchData() {
 
         print("Fetching new data")
-        fetchingMore = true
+        isFetching = true
         dataManager.addImageModels(count: 4)
-        fetchingMore = false
+        isFetching = false
         collectionView.reloadData()
     }
 }
