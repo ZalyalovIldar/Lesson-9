@@ -9,36 +9,44 @@
 /* Begin PBXBuildFile section */
 		7C650DCD2397E508009DE557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DCC2397E508009DE557 /* AppDelegate.swift */; };
 		7C650DCF2397E508009DE557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DCE2397E508009DE557 /* SceneDelegate.swift */; };
-		7C650DD12397E508009DE557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DD02397E508009DE557 /* ViewController.swift */; };
-		7C650DD42397E508009DE557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C650DD22397E508009DE557 /* Main.storyboard */; };
-		7C650DD72397E508009DE557 /* PersistentLesson3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */; };
 		7C650DD92397E509009DE557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C650DD82397E509009DE557 /* Assets.xcassets */; };
 		7C650DDC2397E509009DE557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C650DDA2397E509009DE557 /* LaunchScreen.storyboard */; };
-		7C650DE72397E56C009DE557 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */; };
-		7C650DE82397E56C009DE557 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */; };
-		7C650DEE2397E5CB009DE557 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DED2397E5CB009DE557 /* TableViewController.swift */; };
-		7C650DF12397ED15009DE557 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */; };
-		7C650DF22397ED15009DE557 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */; };
-		7C650DF52397F064009DE557 /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C650DF42397F064009DE557 /* ImageTransformer.swift */; };
+		FACDF503239BB24E0005EEE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F2239BB24E0005EEE0 /* DataManager.swift */; };
+		FACDF504239BB24E0005EEE0 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F3239BB24E0005EEE0 /* Post+CoreDataProperties.swift */; };
+		FACDF505239BB24E0005EEE0 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F4239BB24E0005EEE0 /* DataManagerProtocol.swift */; };
+		FACDF506239BB24E0005EEE0 /* PostStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F5239BB24E0005EEE0 /* PostStructure.swift */; };
+		FACDF507239BB24E0005EEE0 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F6239BB24E0005EEE0 /* Post+CoreDataClass.swift */; };
+		FACDF508239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4F8239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.swift */; };
+		FACDF509239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACDF4F9239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.xib */; };
+		FACDF50A239BB24E0005EEE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACDF4FA239BB24E0005EEE0 /* Main.storyboard */; };
+		FACDF50B239BB24E0005EEE0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4FC239BB24E0005EEE0 /* PostTableViewCell.swift */; };
+		FACDF50C239BB24E0005EEE0 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACDF4FD239BB24E0005EEE0 /* PostTableViewCell.xib */; };
+		FACDF50D239BB24E0005EEE0 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF4FF239BB24E0005EEE0 /* PostDetailViewController.swift */; };
+		FACDF50E239BB24E0005EEE0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF500239BB24E0005EEE0 /* ProfileViewController.swift */; };
+		FACDF50F239BB24E0005EEE0 /* PersistentLesson2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACDF501239BB24E0005EEE0 /* PersistentLesson2.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C650DC92397E508009DE557 /* PersistentLesson3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistentLesson3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C650DCC2397E508009DE557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C650DCE2397E508009DE557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C650DD02397E508009DE557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C650DD32397E508009DE557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7C650DD62397E508009DE557 /* PersistentLesson3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistentLesson3.xcdatamodel; sourceTree = "<group>"; };
 		7C650DD82397E509009DE557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C650DDB2397E509009DE557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C650DDD2397E509009DE557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7C650DED2397E5CB009DE557 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PersistentLesson v2.xcdatamodel"; sourceTree = "<group>"; };
-		7C650DF42397F064009DE557 /* ImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
+		FA33D9AA23A27CD5009FBE1E /* PersistentLesson 2 v.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PersistentLesson 2 v.2.xcdatamodel"; sourceTree = "<group>"; };
+		FACDF4F2239BB24E0005EEE0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FACDF4F3239BB24E0005EEE0 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FACDF4F4239BB24E0005EEE0 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		FACDF4F5239BB24E0005EEE0 /* PostStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostStructure.swift; sourceTree = "<group>"; };
+		FACDF4F6239BB24E0005EEE0 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FACDF4F8239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImagePostCollectionViewCell.swift; sourceTree = "<group>"; };
+		FACDF4F9239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomImagePostCollectionViewCell.xib; sourceTree = "<group>"; };
+		FACDF4FB239BB24E0005EEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACDF4FC239BB24E0005EEE0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		FACDF4FD239BB24E0005EEE0 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		FACDF4FF239BB24E0005EEE0 /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		FACDF500239BB24E0005EEE0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FACDF502239BB24E0005EEE0 /* PersistentLesson2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistentLesson2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,30 +79,50 @@
 		7C650DCB2397E508009DE557 /* PersistentLesson3 */ = {
 			isa = PBXGroup;
 			children = (
-				7C650DEC2397E58C009DE557 /* Models */,
+				FACDF4FE239BB24E0005EEE0 /* Controller */,
+				FACDF4F1239BB24E0005EEE0 /* Model */,
+				FACDF4F7239BB24E0005EEE0 /* View */,
 				7C650DCC2397E508009DE557 /* AppDelegate.swift */,
-				7C650DF42397F064009DE557 /* ImageTransformer.swift */,
 				7C650DCE2397E508009DE557 /* SceneDelegate.swift */,
-				7C650DD02397E508009DE557 /* ViewController.swift */,
-				7C650DED2397E5CB009DE557 /* TableViewController.swift */,
-				7C650DD22397E508009DE557 /* Main.storyboard */,
 				7C650DD82397E509009DE557 /* Assets.xcassets */,
 				7C650DDA2397E509009DE557 /* LaunchScreen.storyboard */,
 				7C650DDD2397E509009DE557 /* Info.plist */,
-				7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */,
+				FACDF501239BB24E0005EEE0 /* PersistentLesson2.xcdatamodeld */,
 			);
 			path = PersistentLesson3;
 			sourceTree = "<group>";
 		};
-		7C650DEC2397E58C009DE557 /* Models */ = {
+		FACDF4F1239BB24E0005EEE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7C650DEF2397ED15009DE557 /* User+CoreDataClass.swift */,
-				7C650DF02397ED15009DE557 /* User+CoreDataProperties.swift */,
-				7C650DE32397E56C009DE557 /* Book+CoreDataClass.swift */,
-				7C650DE42397E56C009DE557 /* Book+CoreDataProperties.swift */,
+				FACDF4F2239BB24E0005EEE0 /* DataManager.swift */,
+				FACDF4F3239BB24E0005EEE0 /* Post+CoreDataProperties.swift */,
+				FACDF4F4239BB24E0005EEE0 /* DataManagerProtocol.swift */,
+				FACDF4F5239BB24E0005EEE0 /* PostStructure.swift */,
+				FACDF4F6239BB24E0005EEE0 /* Post+CoreDataClass.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FACDF4F7239BB24E0005EEE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FACDF4F8239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.swift */,
+				FACDF4F9239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.xib */,
+				FACDF4FA239BB24E0005EEE0 /* Main.storyboard */,
+				FACDF4FC239BB24E0005EEE0 /* PostTableViewCell.swift */,
+				FACDF4FD239BB24E0005EEE0 /* PostTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FACDF4FE239BB24E0005EEE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FACDF4FF239BB24E0005EEE0 /* PostDetailViewController.swift */,
+				FACDF500239BB24E0005EEE0 /* ProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C650DDC2397E509009DE557 /* LaunchScreen.storyboard in Resources */,
+				FACDF50A239BB24E0005EEE0 /* Main.storyboard in Resources */,
+				FACDF509239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.xib in Resources */,
+				FACDF50C239BB24E0005EEE0 /* PostTableViewCell.xib in Resources */,
 				7C650DD92397E509009DE557 /* Assets.xcassets in Resources */,
-				7C650DD42397E508009DE557 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,36 +198,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C650DE72397E56C009DE557 /* Book+CoreDataClass.swift in Sources */,
-				7C650DF52397F064009DE557 /* ImageTransformer.swift in Sources */,
-				7C650DD12397E508009DE557 /* ViewController.swift in Sources */,
-				7C650DE82397E56C009DE557 /* Book+CoreDataProperties.swift in Sources */,
-				7C650DF12397ED15009DE557 /* User+CoreDataClass.swift in Sources */,
+				FACDF50B239BB24E0005EEE0 /* PostTableViewCell.swift in Sources */,
+				FACDF506239BB24E0005EEE0 /* PostStructure.swift in Sources */,
+				FACDF504239BB24E0005EEE0 /* Post+CoreDataProperties.swift in Sources */,
+				FACDF507239BB24E0005EEE0 /* Post+CoreDataClass.swift in Sources */,
+				FACDF50E239BB24E0005EEE0 /* ProfileViewController.swift in Sources */,
 				7C650DCD2397E508009DE557 /* AppDelegate.swift in Sources */,
-				7C650DD72397E508009DE557 /* PersistentLesson3.xcdatamodeld in Sources */,
-				7C650DF22397ED15009DE557 /* User+CoreDataProperties.swift in Sources */,
+				FACDF503239BB24E0005EEE0 /* DataManager.swift in Sources */,
+				FACDF50D239BB24E0005EEE0 /* PostDetailViewController.swift in Sources */,
+				FACDF505239BB24E0005EEE0 /* DataManagerProtocol.swift in Sources */,
+				FACDF508239BB24E0005EEE0 /* CustomImagePostCollectionViewCell.swift in Sources */,
+				FACDF50F239BB24E0005EEE0 /* PersistentLesson2.xcdatamodeld in Sources */,
 				7C650DCF2397E508009DE557 /* SceneDelegate.swift in Sources */,
-				7C650DEE2397E5CB009DE557 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7C650DD22397E508009DE557 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C650DD32397E508009DE557 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C650DDA2397E509009DE557 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7C650DDB2397E509009DE557 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FACDF4FA239BB24E0005EEE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACDF4FB239BB24E0005EEE0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -375,14 +407,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7C650DD52397E508009DE557 /* PersistentLesson3.xcdatamodeld */ = {
+		FACDF501239BB24E0005EEE0 /* PersistentLesson2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */,
-				7C650DD62397E508009DE557 /* PersistentLesson3.xcdatamodel */,
+				FA33D9AA23A27CD5009FBE1E /* PersistentLesson 2 v.2.xcdatamodel */,
+				FACDF502239BB24E0005EEE0 /* PersistentLesson2.xcdatamodel */,
 			);
-			currentVersion = 7C650DF32397EEAC009DE557 /* PersistentLesson v2.xcdatamodel */;
-			path = PersistentLesson3.xcdatamodeld;
+			currentVersion = FA33D9AA23A27CD5009FBE1E /* PersistentLesson 2 v.2.xcdatamodel */;
+			path = PersistentLesson2.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
