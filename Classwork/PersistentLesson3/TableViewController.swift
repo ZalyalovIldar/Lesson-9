@@ -142,7 +142,7 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
-             let user = fetchResultController.object(at: indexPath)
+            let user = fetchResultController.object(at: indexPath)
             
             persistentContainer.viewContext.delete(user)
             saveContext()
